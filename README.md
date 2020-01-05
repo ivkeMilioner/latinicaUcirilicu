@@ -1,2 +1,2 @@
-# latinicaUcirilicu
-Латиница у Ћирилицу, исправљање речи, статистика.
+# L-U-CY  Latin - Serbian Cyrillic converter
+ Latin - Serbian Cyrillic converter + GRAMMAR + COUNTING WORDS + CORRECT UPPERLETERS
