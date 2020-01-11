@@ -888,6 +888,35 @@ function upperCase() {
 
 }
 
+function code() {
+
+
+    var entered_text;
+    entered_text = document.getElementById('textarea').value;
+
+
+
+    entered_text = entered_text.replace(/\.([^\s\d])/g, '. $1');
+
+
+
+    entered_text = entered_text.replace(/\,([^\s\d])/g, ', $1');
+
+
+
+    entered_text = entered_text.replace(/.+?(?:[.?!]\s|$)/g, txt => `${txt.charAt(0).toUpperCase()}${txt.substring(1).toLowerCase()}`);
+
+    entered_text = entered_text.replace(/О/g, '0');
+    entered_text = entered_text.replace(/И/g, '&');
+    entered_text = entered_text.replace(/о/g, '0');
+    entered_text = entered_text.replace(/и/g, '&');
+
+
+    document.getElementById('textarea').style.color = 'red';
+    document.getElementById('textarea').value = entered_text;
+
+}
+
 document.onmousedown = clearSelectedText;
 document.onmouseup = getSelectedText;
 if (!document.all) document.captureEvents(Event.MOUSEUP);

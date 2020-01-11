@@ -17,8 +17,7 @@ var input = document.querySelectorAll('#text_area')[0],
     wordCount = document.querySelector('#wordCount'),
     sentenceCount = document.querySelector('#sentenceCount'),
     paragraphCount = document.querySelector('#paragraphCount'),
-    readingTime = document.querySelector('#readingTime'),
-    readability = document.querySelector('#readability'),
+  ,
     keywordsDiv = document.querySelectorAll('.keywords')[0],
     topKeywords = document.querySelector('#topKeywords');
 
