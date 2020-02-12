@@ -74,10 +74,17 @@ function uCir() {
     entered_text = entered_text.replace(/sx/g, 'ш');
     entered_text = entered_text.replace(/Sx/g, 'Ш');
     entered_text = entered_text.replace(/SX/g, 'Ш');
+    
+    entered_text = entered_text.replace(/sh/g, 'ш');
+    entered_text = entered_text.replace(/Sh/g, 'Ш');
+    entered_text = entered_text.replace(/SH/g, 'Ш');
 
     entered_text = entered_text.replace(/zx/g, 'ж');
     entered_text = entered_text.replace(/Zx/g, 'Ж');
     entered_text = entered_text.replace(/ZX/g, 'Ж');
+
+   
+
 
     entered_text = entered_text.replace(/a/g, 'а');
     entered_text = entered_text.replace(/b/g, 'б');
