@@ -20,6 +20,8 @@ function toPhrases(text, wordCount) {
   return phrases;
 }
 
+
+
 function createPhrases() {
   const text = document.getElementById("textarea").value;
   document.getElementById("output-2").innerHTML = JSON.stringify([
@@ -32,3 +34,18 @@ function createPhrases() {
     ...toPhrases(text.toString(), 4)
   ]);
 }
+
+
+
+
+
+/*document.getElementById("output-2").innerHTML = JSON.stringify([
+    ...toPhrases(text.toString(), 2)
+  ]);
+  document.getElementById("output-3").innerHTML = JSON.stringify([
+    ...toPhrases(text.toString(), 3)
+  ]);
+  document.getElementById("output-4").innerHTML = "<p>"+JSON.stringify([
+    ...toPhrases(text.toString(), 4)
+  ]);
+}*/

@@ -17,11 +17,26 @@
 
 
     <button id="copy" onclick="uCir()">У ЋИРИЛИЦУ</button>
-    <button id="correct" onclick="correct()">ИСПРАВИ</button>
+    <button id="copy" onclick="clearText()">УКЛОНИ СПЕЦИЈАЛНЕ ЗНАКЕ</button>
+    <button id="copy" onclick="toLowerCase()">У МАЛА СЛОВА</button>
+    
     <button id="upperLetter" onclick="upperCase()">ВЕЛИКА СЛОВА</button>
 
     <textarea id="textarea" placeholder="Прекопирај текст овде
 CTRL + V "></textarea>
+
+
+
+<td>ДОДЕЛИ ИМЕ ФАЈЛУ:</td>
+<td><input id="inputFileNameToSaveAs"></input></td>
+<td><button onclick="saveTextAsFile()">САЧУВАЈ ТЕКСТ ФАЈЛ</button></td>
+
+<td>ИЗАБЕРИ ТЕКСТ ФАЈЛА:</td>
+<td><input type="file" id="fileToLoad"></td>
+<td><button onclick="loadFileAsText()">УЧИТАЈ ТЕКСТ</button><td>
+
+
+
 
     <button id="copy" onclick="copy()">КОПИРАЈ</button>
     <button id="copy" onclick="count()">БРОЈ КАРАКТЕРА И НАЈЧЕШЋЕ РЕЧИ</button>
@@ -54,15 +69,19 @@ CTRL + V "></textarea>
 
 
     <button id="toPhrasesBtn" onclick="createPhrases()">ПРОНАЂИ ФРАЗЕ</button>
-    <br>
-    ФРАЗЕ СА 2 РЕЧИ:
-    <p id="output-2"></p>
-    <br>
-    ФРАЗЕ СА 3 РЕЧИ:
-    <p id="output-3"></p>
-    <br>
-    ФРАЗЕ СА 4 РЕЧИ:
-    <p id="output-4"></p>
+
+
+  
+ <ul id="myList">
+  ФРАЗЕ СА 2 РЕЧИ:
+  <li id="output-2"></li>
+  ФРАЗЕ СА 3 РЕЧИ:
+  <li id="output-3"></li>
+  ФРАЗЕ СА 4 РЕЧИ:
+  <li id="output-4"></li>
+</ul>
+
+  
 
 
 
@@ -85,6 +104,9 @@ CTRL + V "></textarea>
   <script src="copy.js"></script>
   <script src="convertCuL.js"></script>
   <script src="countPhrases.js"></script>
+  <script src="clearText.js"></script>
+
+  <script src="saveText.js"></script>
 
 </body>
 
